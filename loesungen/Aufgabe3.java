@@ -1,4 +1,6 @@
-public class App {
+import java.util.ArrayList;
+
+public class Aufgabe3 {
 
     public static void main(String[] args) {
         ArrayList<Integer> list = new ArrayList<>();
@@ -9,4 +11,3 @@ public class App {
     }
 
 }
-

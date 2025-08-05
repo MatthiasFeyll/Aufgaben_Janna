@@ -1,4 +1,6 @@
 
+public class App {
+
     public static void main(String[] args) {
         Person p1 = new Person("Janna", 19);
         Person p2 = new Person("Matthias", 27);
