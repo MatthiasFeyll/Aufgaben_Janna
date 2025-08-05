@@ -22,12 +22,10 @@ public static int summe(int x, int y) {
 </details>
 
 
+
 ### Aufgabe 2
-Erstelle eine Liste die Integer-Werte beinhalten soll. Füge zwei Werte deiner Wahl in die Liste hinzu. Gebe anschließend den ersten Wert in der Liste aus.
 
-### Aufgabe 3
-
-Erweiter folgende Klasse um ein Konstruktor. Dem Konstruktor sollen alle in der Klasse enthaltenen Attribute als Parameter übergeben werden. Eine Person kann maximal 99 Jahre alt werden.
+Erweiter folgende Klasse um ein Konstruktor. Dem Konstruktor sollen alle in der Klasse enthaltenen Attribute als Parameter übergeben werden. Eine Person kann maximal 99 Jahre alt werden. Erstelle ein Objekt der Klasse Person.
 
 ```
 public class Person {
@@ -63,3 +61,6 @@ public class Person {
     }
 }
 </details>
+
+### Aufgabe 2
+Erstelle eine Liste die Integer-Werte beinhalten soll. Füge zwei Werte deiner Wahl in die Liste hinzu. Gebe anschließend den ersten Wert in der Liste aus.
