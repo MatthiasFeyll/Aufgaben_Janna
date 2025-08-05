@@ -6,7 +6,7 @@ Die Aufgaben sind maximal 10 Zeilen Code. Ich empfehle dir entweder die Auto-Com
 
 Alternativ gibt es online einfache compiler die nur syntax highlighting haben. Hier der Link: [Programmiz](https://www.programiz.com/java-programming/online-compiler/)
 
-### Aufgabe 0 - Methoden - [Link zu der Lösung](./loesungen/Aufgabe1.java)
+### Aufgabe 1 - Methoden - [Link zu der Lösung](./loesungen/Aufgabe1.java)
 Erstelle eine Methode die zwei Parameter x und y vom Typ int besitzt. Gebe die Summe der beiden Parameter zurück. Überprüfe deine Lösung durch eine entsprechende Ausgabe (Mit `System.out.printl()`)
 
 <details>
