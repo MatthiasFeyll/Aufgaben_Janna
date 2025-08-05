@@ -6,7 +6,7 @@ Die Aufgaben sind maximal 10 Zeilen Code. Ich empfehle dir entweder die Auto-Com
 
 Alternativ gibt es online einfache compiler die nur syntax highlighting haben. Hier der Link: [Programmiz]{https://www.programiz.com/java-programming/online-compiler/}
 
-### Aufgabe 1
+### Aufgabe 1 - Methoden
 Erstelle eine Methode die zwei Parameter x und y vom Typ int besitzt. Gebe die Summe der beiden Parameter zurück. Überprüfe deine Lösung durch eine entsprechende Ausgabe (Mit `System.out.printl()`)
 
 <details>
@@ -23,7 +23,7 @@ public static int summe(int x, int y) {
 
 
 
-### Aufgabe 2
+### Aufgabe 2 - Konstruktor
 
 Erweiter folgende Klasse um ein Konstruktor. Dem Konstruktor sollen alle in der Klasse enthaltenen Attribute als Parameter übergeben werden. Eine Person kann maximal 99 Jahre alt werden. Erstelle ein Objekt der Klasse Person.
 
@@ -62,5 +62,5 @@ public class Person {
 }
 </details>
 
-### Aufgabe 2
+### Aufgabe 3 - Listen
 Erstelle eine Liste die Integer-Werte beinhalten soll. Füge zwei Werte deiner Wahl in die Liste hinzu. Gebe anschließend den ersten Wert in der Liste aus.
