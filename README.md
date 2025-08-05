@@ -4,7 +4,7 @@ Hey hier ein paar Aufgaben an denen du nochmal dein Wissen festigen kannst <3
 
 Die Aufgaben sind maximal 10 Zeilen Code. Ich empfehle dir entweder die Auto-Completion auszuschalten (Aus einem Reddit Forum Go to File Settings , then Editor > General > Inline completion , and then disable "Enable local Full Line completion suggestions)
 
-Alternativ gibt es online einfache compiler die nur syntax highlighting haben. Hier der Link: [Programmiz]{https://www.programiz.com/java-programming/online-compiler/}
+Alternativ gibt es online einfache compiler die nur syntax highlighting haben. Hier der Link: [Programmiz](https://www.programiz.com/java-programming/online-compiler/)
 
 ### Aufgabe 0 - Methoden - [Link zu der Lösung](./loesungen/Aufgabe1.java)
 Erstelle eine Methode die zwei Parameter x und y vom Typ int besitzt. Gebe die Summe der beiden Parameter zurück. Überprüfe deine Lösung durch eine entsprechende Ausgabe (Mit `System.out.printl()`)
