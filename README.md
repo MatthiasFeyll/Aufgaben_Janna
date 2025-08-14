@@ -1,58 +1,42 @@
-# Aufgaben - Recap Functions
+# Aufgaben - Objektorientierte Programmierung
 
-## Aufgabe eins
+## Aufgabe 1
+Erstellen Sie eine Klasse Student. Ein Student besitzt einen Namen und eine Matrikelnummer und einen Notendurschnitt. Wähle geeignete Datentypen. Erstellen Sie den Konstruktor sowie Zugriffsmethoden für die Attribute. Die Matrikelnummer darf nicht größer als 666 sein.
 
-Welche Ausgabe hat dieses Programm?
+## Aufgabe 2
+Erstellen Sie eine Klasse Universität. Diese besitzt einen Standort sowie 3 Studierende (Student1, Student2, Student3). Erstellen Sie den Konstruktor sowie die Zugriffsmethoden für die Attribute
 
-```java
-public class AufgabeEins {
-    public static String makeGreeting(String name, int repeat) {
-        String message = "";
-        for (int i = 0; i < repeat; i++) {
-            message += "Hello " + name + "! ";
-        }
-        return message;
-    }
+### Anmerkung
+Normalerweise würde man eine Liste verwenden in die alle Studierenden gespeichert werden. Da wir das noch nicht machen arbeiten wir erstmal nur mit drei Studierenden pro Uni.
 
-    public static void main(String[] args){
-        String greetings = makeGreeting("Janna", 3);
-        System.out.println(greetings);
-    }
-}
+## Aufgabe 3
+Erstelle eine Methode `public double berechneNotenschnitt()`, welche den Durschnitt aller Studenten zurück gibt.
 
-```
+## Aufgabe 4
+Erweitere die Klasse Student um das Attribut `bestanden` als Integer. Die Zahlen sind wie folgt definiert:
+* 1 = er hat bestanden
+* 2 = er hat nicht bestanden
+* 3 = er studiert noch
 
-## Aufgabe zwei
+Erweiter den Konstruktor. Gehe davon aus, dass alle neu erstellten Studenten gerade am studieren sind.
 
-Aliens sind auf die Erde gekommen und haben alle Variablen und Funktionnamen unkenntlich gemacht. Versuche dennoch zu erkennen was das Programm macht.
+## Aufgabe 5
+Erweitere die Klasse Studen um die Methode `public boolean beendeStudium()`. Ist der Notendurschnitt des Studierenden größer als 4.0 ist das Studium nicht bestanden. Passe entsprechend der Definition aus Aufgabe 4 das Attribut `bestanden` an und gebe entsprechend seines Notendurschnitts eine der folgenden Meldungen aus:
+"Student Janna (MatrikelNr: 666) => bestanden"
+"Student Janna (MatrikelNr: 666) => nicht bestanden"
 
-```java
-public class XorblinQap {
 
-    public static int vrakTuld(int mip) {
-        return mip * 3600;
-    }
+Hinweis:
+Habe es extra so "doof" wie in der Übungsklausur geschrieben. Janna und die MatrikelNr 666 sind natürlich nur beispielhafte Werte. Da könnte auch Matthias mit der MatrikelNr 665 stehen.
 
-    public static int glonSpiv(int ner) {
-        return ner * 60;
-    }
 
-    public static int frabZint(int mip, int ner, int zol) {
-        int quib = vrakTuld(mip);
-        int snok = glonSpiv(ner);
+## Aufgabe 6 - knifflig
+Bislang haben wir nur die Info in der Universitäts-Klasse, welche Studenten sie hat. Der Student weiß allerdings nicht in welcher Uni er studiert. Füge dem Studenten das Attribut Universität hinzu. Erstelle die Zugriffsmethoden für dieses Attribut. Sobald eine Universität erstellt wird, soll in der Studenten-Klasse auch das `Universitäts`-Attribut gesetzt werden. 
 
-        int blim = quib + snok + zol;
-        return blim;
-    }
 
-    public static void main(String[] args) {
-        int mip = 1;
-        int ner = 30;
-        int zol = 45;
 
-        int blim = frabZint(mip, ner, zol);
-        System.out.println("Zlorg vreeb: " + blim);
-    }
-}
 
-```
+## Inhaltliche Fragen an Janna
+* Hattet ihr Enums?
+* Habt ihr euch mit dem Schlüsselwort `static` beschäftigt?
+* @Override sollten wir uns nochmal angucken bzw. dieses `toString()`
