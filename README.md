@@ -1,42 +1,54 @@
-# Aufgaben - Objektorientierte Programmierung
+# Aufgabe 1 - Happy Coding <3
+a) Erstelle eine Klasse Busfahrt. Diese hat ein Start und ein End-Zeit. Die Zeiten sind relativ zu 0 Uhr in Minuten. Bspw. Der Wert 480 ist 8 Uhr morgens da 480 / 60 = 8. 
+Die Endzeit soll beim Erstellen auf -1 gesetzt werden. Erstelle einen entsprechenden Konstruktor und die Zugriffsmethoden.
 
-## Aufgabe 1
-Erstellen Sie eine Klasse Student. Ein Student besitzt einen Namen und eine Matrikelnummer und einen Notendurschnitt. Wähle geeignete Datentypen. Erstellen Sie den Konstruktor sowie Zugriffsmethoden für die Attribute. Die Matrikelnummer darf nicht größer als 666 sein.
+b) Erweitere den Setter der End-Zeit. Der neu gesetzte Wert soll immer positiv sein. Darüber hinaus muss die End-Zeit nach der Start-Zeit sein.
 
-## Aufgabe 2
-Erstellen Sie eine Klasse Universität. Diese besitzt einen Standort sowie 3 Studierende (Student1, Student2, Student3). Erstellen Sie den Konstruktor sowie die Zugriffsmethoden für die Attribute
+c) Überschreibe die `toString()` Methode. Diese soll folgende Ausgabe haben:
+```
+Der Bus fährt um 8:42 Uhr und endet um Uhr 15:20 Uhr.
+```
+Falls das Ende noch nicht gesetzt ist soll folgender Text ausgegeben werden
+```
+Der Bus fährt um 8:42 Uhr los.
+```
 
-### Anmerkung
-Normalerweise würde man eine Liste verwenden in die alle Studierenden gespeichert werden. Da wir das noch nicht machen arbeiten wir erstmal nur mit drei Studierenden pro Uni.
+d) Schreibe eine weitere Methode `public int getDauer(){}`, welche die Dauer der Fahrt zurück gibt. Falls das Ende noch nicht gesetzt ist soll -1 zurückgegeben werden.
 
-## Aufgabe 3
-Erstelle eine Methode `public double berechneNotenschnitt()`, welche den Durschnitt aller Studenten zurück gibt.
+e) Schreibe eine Funktion in einer Main Methode, welche alle Busfahrten in einer neuen Liste zurück gibt. Diese Liste soll nur Busfahrten entahlten bei der die Dauer in dem geschlossenen Intervall liegt.
 
-## Aufgabe 4
-Erweitere die Klasse Student um das Attribut `bestanden` als Integer. Die Zahlen sind wie folgt definiert:
-* 1 = er hat bestanden
-* 2 = er hat nicht bestanden
-* 3 = er studiert noch
+Beispiel: 
 
-Erweiter den Konstruktor. Gehe davon aus, dass alle neu erstellten Studenten gerade am studieren sind.
+Interval-Start = 20
 
-## Aufgabe 5
-Erweitere die Klasse Studen um die Methode `public boolean beendeStudium()`. Ist der Notendurschnitt des Studierenden größer als 4.0 ist das Studium nicht bestanden. Passe entsprechend der Definition aus Aufgabe 4 das Attribut `bestanden` an und gebe entsprechend seines Notendurschnitts eine der folgenden Meldungen aus:
-"Student Janna (MatrikelNr: 666) => bestanden"
-"Student Janna (MatrikelNr: 666) => nicht bestanden"
+Interval-Ende = 100
 
-
-Hinweis:
-Habe es extra so "doof" wie in der Übungsklausur geschrieben. Janna und die MatrikelNr 666 sind natürlich nur beispielhafte Werte. Da könnte auch Matthias mit der MatrikelNr 665 stehen.
+Es wird nur das Busfahrt-Objekt der Variable b3 zurück gegeben.
 
 
-## Aufgabe 6 - knifflig
-Bislang haben wir nur die Info in der Universitäts-Klasse, welche Studenten sie hat. Der Student weiß allerdings nicht in welcher Uni er studiert. Füge dem Studenten das Attribut Universität hinzu. Erstelle die Zugriffsmethoden für dieses Attribut. Sobald eine Universität erstellt wird, soll in der Studenten-Klasse auch das `Universitäts`-Attribut gesetzt werden. 
-
-
-
-
-## Inhaltliche Fragen an Janna
-* Hattet ihr Enums?
-* Habt ihr euch mit dem Schlüsselwort `static` beschäftigt?
-* @Override sollten wir uns nochmal angucken bzw. dieses `toString()`
+```java
+public class Main {
+	public static void main(String[] args) {
+	    ArrayList<Busfahrt> busfahrten = new ArrayList<Busfahrt>();
+	    
+        // Dauer 10 Minuten
+	    Busfahrt b1 = new Busfahrt(240);
+	    b1.setEnde(250);
+	    busfahrten.add(b1);
+	    
+        // Dauer 120 Minuten
+	    Busfahrt b2 = new Busfahrt(480);
+	    b2.setEnde(600);
+	    busfahrten.add(b2);
+	    
+        // Dauer 100 Minuten
+	    Busfahrt b3 = new Busfahrt(800);
+	    b3.setEnde(900);
+	    busfahrten.add(b3);
+	}
+	
+	public static ArrayList<Busfahrt> getIntervalDauer(int start, int ende) {
+	    
+	}
+}
+``` 
